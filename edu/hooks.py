@@ -4,22 +4,22 @@ app_publisher = "Vinayak"
 app_description = "Custom education app. Upcoming school changes go here."
 app_email = "88484705+vinuneeru@users.noreply.github.com"
 app_license = "mit"
+app_logo_url = "/assets/edu/images/edu-logo.svg"
+app_home = "/desk/student"
 
-# Apps
-# ------------------
+add_to_apps_screen = [
+	{
+		"name": app_name,
+		"logo": app_logo_url,
+		"title": app_title,
+		"route": app_home,
+		"sequence_id": 20,
+	}
+]
 
-# required_apps = []
-
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "edu",
-# 		"logo": "/assets/edu/logo.png",
-# 		"title": "Edu",
-# 		"route": "/edu",
-# 		"has_permission": "edu.api.permission.has_app_permission",
-# 	}
-# ]
+fixtures = [
+	{"dt": "Custom Field", "filters": [["module", "=", "Edu"]]},
+]
 
 # The dock, the rail down the left of the desk, is a document rather than a hook. Author it in
 # Manage Dock on a developer-mode site and press Export to App, and it is written to

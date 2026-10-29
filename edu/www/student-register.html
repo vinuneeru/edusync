@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ title | e }}</title>
+	<style>{{ colocated_css | safe }}</style>
+</head>
+<body>
+	<div id="student-register" class="register">
+		<header class="mast">
+			<div class="mast-row">
+				<p class="school">{{ company | e }}</p>
+				<p class="who">{{ full_name | e }} <a href="/desk">{{ _("Desk") }}</a></p>
+			</div>
+			<h1>{{ _("Student Register") }}</h1>
+			<label class="find">
+				<input type="search" class="sr-query" placeholder="{{ _('Search by name or student ID') }}" autocomplete="off" spellcheck="false">
+			</label>
+		</header>
+		<div class="spread">
+			<section class="index" aria-label="{{ _('Recent') }}">
+				<div class="index-head">
+					<p class="sr-list-label">{{ _("Recent") }}</p>
+					<button type="button" class="text-btn sr-new">{{ _("New student") }}</button>
+				</div>
+				<div class="filters">
+					<select class="sr-grade-filter" aria-label="{{ _('Grade') }}">
+						<option value="">{{ _("All grades") }}</option>
+					</select>
+					<select class="sr-status-filter" aria-label="{{ _('Status') }}">
+						<option value="">{{ _("All statuses") }}</option>
+						<option value="Draft">{{ _("Draft") }}</option>
+						<option value="Submitted">{{ _("Submitted") }}</option>
+					</select>
+				</div>
+				<div class="sr-list" role="list"></div>
+			</section>
+			<section class="record">
+				<header class="record-head">
+					<div>
+						<p class="sr-kicker">{{ _("Student") }}</p>
+						<h2 class="sr-title">{{ _("New student") }}</h2>
+						<p class="sr-help">{{ _("Saving submits the student. When a grade is set, the fee invoice is created.") }}</p>
+					</div>
+					<button type="button" class="save sr-save">{{ _("Save") }}</button>
+				</header>
+				<p class="sr-banner" hidden></p>
+				<p class="sr-status" role="status"></p>
+				<div class="sr-sections"></div>
+				<footer class="record-foot">
+					<a class="sr-open text-btn" hidden href="/desk/student">{{ _("Open Student") }}</a>
+					<button type="button" class="save sr-save">{{ _("Save") }}</button>
+				</footer>
+			</section>
+		</div>
+	</div>
+	<script>
+		window.frappe = window.frappe || {};
+		frappe.boot = {{ boot_json | safe }};
+		frappe.ready_events = [];
+		frappe.ready = function (fn) { frappe.ready_events.push(fn); };
+	</script>
+	{{ include_script('frappe-web.bundle.js') }}
+	<!-- csrf_token -->
+	<script>{{ colocated_js | safe }}</script>
+</body>
+</html>

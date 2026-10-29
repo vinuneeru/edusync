@@ -1,0 +1,20 @@
+{
+ "creation": "2026-10-28 16:00:00",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "pencil",
+ "idx": 0,
+ "modified": "2026-10-28 16:00:00",
+ "modified_by": "Administrator",
+ "module": "Edu",
+ "name": "student-desk",
+ "owner": "Administrator",
+ "page_name": "student-desk",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "standard": "Yes",
+ "title": "Student Register"
+}

@@ -1,0 +1,159 @@
+Student,طالب
+Student ID,رقم الطالب
+Status,الحالة
+New,مستجد
+Returning,قديم
+Gender,الجنس
+Male,ذكر
+Female,أنثى
+Student Name,اسم الطالب
+Last Name,اللقب
+Family,العائلة
+Father's Name,اسم الأب
+Mother's Name,اسم الأم
+Grandfather's Name,اسم الجد
+Family Sequence,تسلسل عائلات
+Civil Registry,القيد المدني
+Place of Birth,مكان الولادة
+Date of Birth,تاريخ الولادة
+Nationality,الجنسية
+Civil Registry Office,الأمانة
+Place of Registration,محل القيد
+Registration Number,رقم القيد
+National ID,الرقم الوطني
+School,المدرسة
+Section,القسم
+Grade,الصف
+Division,الشعبة
+Education Ministry ID,رقم الطالب في التربية
+General Register No,رقم السجل العام
+Previous School,المدرسة السابقة
+Address,العنوان
+Governorate,المحافظة
+District,المنطقة
+Subdistrict,الناحية
+Street,الشارع
+Address Line 1,العنوان المفصل 1
+Address Line 2,العنوان المفصل 2
+Contact,التواصل
+Father's Phone,رقم هاتف الأب
+Mother's Phone,رقم هاتف الأم
+Services,الخدمات
+Needs Transport,يحتاج مواصلات
+Needs Meal,يحتاج وجبة
+Transport Line No,رقم خط المواصلات
+Enrollment,التسجيل
+Registration Date,تاريخ التسجيل
+Withdrawal Date,تاريخ الانسحاب
+Siblings in School,عدد الأخوة في المدرسة
+Withdrawal Reason,سبب الانسحاب
+Records,الملف
+Dossier on File,الإضبارة
+Supporting Documents,الثبوتيات
+Ninth Grade Certificate,شهادة التاسع
+Orphan,يتيم
+Martyr's Child,ابن شهيد
+Fees Paid,التسديد
+Notes,ملاحظات
+General Notes,ملاحظات عامة
+Fee Master,جدول الرسوم
+Fee Component,بند الرسوم
+Grade Description,وصف الصف
+Subjects,المواد
+Subject,المادة
+Fees,الرسوم
+Total,المجموع
+Revised From,مراجع من
+Revise for Next Year,مراجعة للسنة التالية
+Series,السلسلة
+On submit, a Sales Invoice is created from the submitted Fee Master for this grade.,عند الاعتماد تُنشأ فاتورة مبيعات من جدول الرسوم المعتمد لهذا الصف.
+Sender Name,اسم المرسل
+Accountant,المحاسب
+Transport Line,خط النقل
+Line Number,رقم الخط
+Area,المنطقة
+Driver Name,اسم السائق
+Driver Phone,رقم هاتف السائق
+Vehicle Number,رقم الآلية
+Vehicle Type,نوعها
+Passenger Capacity,عدد الركاب
+Supervisor Name,اسم المشرف
+Supervisor Phone,رقم هاتف المشرف
+Van,فان
+Minibus,ميني باص
+Coach,بولمان
+Vehicle,الآلية
+Crew,الطاقم
+Student Register,سجل الطلاب
+Search by name or student ID,ابحث بالاسم أو رقم الطالب أو الرقم الوطني
+New student,طالب جديد
+Save,حفظ
+Saving,جار الحفظ
+Recent,الأحدث
+Results,النتائج
+No matching students,لا يوجد طلاب مطابقون
+No students yet,لا يوجد طلاب بعد
+Draft,مسودة
+Submitted,مرحّل
+Cancelled,ملغى
+Saved,تم الحفظ
+Open Student,فتح الطالب
+Line,الخط
+Saving submits the student. When a grade is set, the fee invoice is created.,الحفظ يرحّل الطالب. عند تحديد الصف تُنشأ فاتورة الرسوم.
+This student is submitted. Open the Student document to change it.,هذا الطالب مرحّل. افتح وثيقة الطالب لتعديله.
+Student ID cannot be changed from this page.,لا يمكن تغيير رقم الطالب من هذه الصفحة.
+Submitted students are changed from the Student document.,الطلاب المرحّلون يُعدَّلون من وثيقة الطالب.
+Enter a student or search the register.,أدخل طالباً أو ابحث في السجل.
+Desk,المكتب
+Could not save the student,تعذر حفظ الطالب
+All grades,كل الصفوف
+All statuses,كل الحالات
+Payment Register,سجل الدفعات
+Search by student or notice,ابحث بالطالب أو رقم الإشعار
+Search by ID or name,ابحث بالرقم أو الاسم
+More than one student matches {0}. Choose the student from the list.,أكثر من طالب يطابق {0}. اختر الطالب من القائمة.
+New payment,دفعة جديدة
+Receipt,سند القبض
+Saving submits the payment and records it against the fee invoice. Any amount above the invoice stays on the customer as an advance.,الحفظ يرحّل سند القبض ويسجله على فاتورة الرسوم. ما زاد عن الفاتورة يبقى سلفة على العميل.
+This payment is submitted. Open the Payment Entry to change it.,هذه الدفعة مرحّلة. افتح سند القبض لتعديلها.
+Open Payment Entry,فتح سند القبض
+Could not save the payment,تعذر حفظ الدفعة
+All currencies,كل العملات
+Payment Notice,رقم إشعار الدفع
+Note,ملاحظة
+Invoice,الفاتورة
+Date,التاريخ
+Amount,المبلغ
+Currency,العملة
+No matching payments,لا توجد دفعات مطابقة
+No payments yet,لا توجد دفعات بعد
+No fee invoice. The amount stays as an advance on the customer.,لا توجد فاتورة رسوم. يبقى المبلغ سلفة على العميل.
+This invoice is already paid. The amount stays as an advance on the customer.,الفاتورة مسددة. يبقى المبلغ سلفة على العميل.
+Outstanding,المتبقي
+Allocated,المخصص
+Unallocated,غير المخصص
+Received into,يُقبض في
+You do not have permission to open the payment register.,ليست لديك صلاحية فتح سجل الدفعات.
+Currency must be USD or SYP.,العملة يجب أن تكون الدولار أو الليرة السورية.
+Amount must be greater than zero.,يجب أن يكون المبلغ أكبر من صفر.
+Enter the payment notice number.,أدخل رقم إشعار الدفع.
+Enter the student ID.,أدخل رقم الطالب.
+Submit the student before recording a payment.,رحّل الطالب قبل تسجيل الدفعة.
+This student has no customer yet.,لا يوجد عميل لهذا الطالب بعد.
+Submitted payments are changed from the Payment Entry document.,الدفعات المرحّلة تُعدَّل من سند القبض.
+No USD bank account is set for {0}.,لا يوجد حساب بنكي بالدولار لـ {0}.
+No SYP bank account is set for {0}.,لا يوجد حساب بنكي بالليرة لـ {0}.
+No exchange rate from {0} to {1} for {2}.,لا يوجد سعر صرف من {0} إلى {1} بتاريخ {2}.
+The receipt could not be balanced. Difference is {0}.,تعذر موازنة سند القبض. الفرق {0}.
+Set the company default receivable account.,عيّن حساب العملاء الافتراضي للشركة.
+The company receivable account must be in {0}.,حساب العملاء يجب أن يكون بعملة {0}.
+Set the default company first.,عيّن الشركة الافتراضية أولاً.
+Student {0} was not found.,الطالب {0} غير موجود.
+More than one student has ID {0}.,أكثر من طالب له الرقم {0}.
+Payment Entry {0} was not found.,سند القبض {0} غير موجود.
+Attachment,مرفق
+Attach,إرفاق
+Attaching,جار الإرفاق
+Attaches when you save,يُرفق عند الحفظ
+Remove,إزالة
+Could not attach the file,تعذر إرفاق الملف

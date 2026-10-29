@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ title | e }}</title>
+	<style>{{ colocated_css | safe }}</style>
+</head>
+<body>
+	<div id="payment-register" class="register">
+		<header class="mast">
+			<div class="mast-row">
+				<p class="school">{{ company | e }}</p>
+				<p class="who">{{ full_name | e }} <a href="/desk">{{ _("Desk") }}</a></p>
+			</div>
+			<h1>{{ _("Payment Register") }}</h1>
+			<label class="find">
+				<input type="search" class="sr-query" placeholder="{{ _('Search by student or notice') }}" autocomplete="off" spellcheck="false">
+			</label>
+		</header>
+		<div class="spread">
+			<section class="index" aria-label="{{ _('Recent') }}">
+				<div class="index-head">
+					<p class="sr-list-label">{{ _("Recent") }}</p>
+					<button type="button" class="text-btn sr-new">{{ _("New payment") }}</button>
+				</div>
+				<div class="filters">
+					<select class="sr-currency-filter" aria-label="{{ _('Currency') }}">
+						<option value="">{{ _("All currencies") }}</option>
+						<option value="USD">USD</option>
+						<option value="SYP">SYP</option>
+					</select>
+					<select class="sr-status-filter" aria-label="{{ _('Status') }}">
+						<option value="">{{ _("All statuses") }}</option>
+						<option value="Draft">{{ _("Draft") }}</option>
+						<option value="Submitted">{{ _("Submitted") }}</option>
+					</select>
+				</div>
+				<div class="sr-list" role="list"></div>
+			</section>
+			<section class="record">
+				<header class="record-head">
+					<div>
+						<p class="sr-kicker">{{ _("Receipt") }}</p>
+						<h2 class="sr-title">{{ _("New payment") }}</h2>
+						<p class="sr-help">{{ _("Saving submits the payment and records it against the fee invoice. Any amount above the invoice stays on the customer as an advance.") }}</p>
+					</div>
+					<button type="button" class="save sr-save">{{ _("Save") }}</button>
+				</header>
+				<p class="sr-banner" hidden></p>
+				<p class="sr-status" role="status"></p>
+				<div class="sr-sections">
+					<section class="sr-section">
+						<h3>{{ _("Receipt") }}</h3>
+						<div class="sr-grid">
+							<div class="sr-field sr-student">
+								<label>{{ _("Student ID") }} <span class="sr-req">*</span></label>
+								<input type="text" data-field="student_id" dir="auto" autocomplete="off" spellcheck="false" placeholder="{{ _('Search by ID or name') }}">
+								<div class="sr-suggest" hidden></div>
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Student Name") }}</label>
+								<input type="text" data-field="student_name" dir="auto" readonly>
+							</div>
+							<div class="sr-field wide">
+								<label>{{ _("Invoice") }}</label>
+								<input type="text" data-field="sales_invoice" readonly>
+								<p class="sr-note sr-invoice-note"></p>
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Date") }} <span class="sr-req">*</span></label>
+								<input type="date" data-field="posting_date">
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Amount") }} <span class="sr-req">*</span></label>
+								<input type="number" data-field="amount" min="0" step="0.01" inputmode="decimal">
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Currency") }} <span class="sr-req">*</span></label>
+								<select data-field="currency">
+									<option value=""></option>
+									<option value="USD">USD</option>
+									<option value="SYP">SYP</option>
+								</select>
+								<p class="sr-note sr-bank"></p>
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Payment Notice") }} <span class="sr-req">*</span></label>
+								<input type="text" data-field="reference_no" dir="auto" autocomplete="off">
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Sender Name") }}</label>
+								<input type="text" data-field="sender_name" dir="auto" autocomplete="off">
+							</div>
+							<div class="sr-field">
+								<label>{{ _("Accountant") }}</label>
+								<input type="text" data-field="accountant" dir="auto" autocomplete="off">
+							</div>
+							<div class="sr-field wide">
+								<label>{{ _("Note") }}</label>
+								<textarea data-field="remarks" dir="auto"></textarea>
+							</div>
+							<div class="sr-field wide">
+								<label>{{ _("Attachment") }}</label>
+								<div class="sr-attach">
+									<button type="button" class="sr-attach-btn">{{ _("Attach") }}</button>
+									<input type="file" class="sr-file" hidden>
+									<ul class="sr-files"></ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<footer class="record-foot">
+					<a class="sr-open text-btn" hidden href="/desk/payment-entry">{{ _("Open Payment Entry") }}</a>
+					<button type="button" class="save sr-save">{{ _("Save") }}</button>
+				</footer>
+			</section>
+		</div>
+	</div>
+	<script>
+		window.frappe = window.frappe || {};
+		frappe.boot = {{ boot_json | safe }};
+		frappe.ready_events = [];
+		frappe.ready = function (fn) { frappe.ready_events.push(fn); };
+	</script>
+	{{ include_script('frappe-web.bundle.js') }}
+	<!-- csrf_token -->
+	<script>{{ colocated_js | safe }}</script>
+</body>
+</html>

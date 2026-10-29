@@ -1,0 +1,514 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:student_id",
+ "creation": "2026-10-27 20:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_tab",
+  "identity_section",
+  "student_id",
+  "status",
+  "gender",
+  "column_break_identity",
+  "student_name",
+  "last_name",
+  "family_section",
+  "father_name",
+  "mother_name",
+  "column_break_family",
+  "grandfather_name",
+  "family_sequence",
+  "civil_section",
+  "place_of_birth",
+  "date_of_birth",
+  "nationality",
+  "column_break_civil",
+  "civil_registry_office",
+  "place_of_registration",
+  "registration_number",
+  "national_id",
+  "school_tab",
+  "school_section_break",
+  "school_section",
+  "grade",
+  "class_division",
+  "column_break_school",
+  "education_ministry_id",
+  "general_register_no",
+  "previous_school",
+  "address_tab",
+  "address_section",
+  "governorate",
+  "district",
+  "subdistrict",
+  "column_break_address",
+  "street",
+  "address_line_1",
+  "address_line_2",
+  "contact_section",
+  "father_phone",
+  "column_break_contact",
+  "mother_phone",
+  "enrollment_tab",
+  "enrollment_section",
+  "registration_date",
+  "customer",
+  "sales_invoice",
+  "withdrawal_date",
+  "column_break_enrollment",
+  "siblings_in_school",
+  "withdrawal_reason",
+  "services_section",
+  "needs_transport",
+  "needs_meal",
+  "column_break_services",
+  "transport_line",
+  "records_section",
+  "has_dossier",
+  "has_documents",
+  "has_ninth_certificate",
+  "column_break_records",
+  "is_orphan",
+  "is_martyrs_child",
+  "fees_paid",
+  "notes_section",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_tab",
+   "fieldtype": "Tab Break",
+   "label": "Student"
+  },
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "New\nReturning",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_identity",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Student Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "family_section",
+   "fieldtype": "Section Break",
+   "label": "Family",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father's Name"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother's Name"
+  },
+  {
+   "fieldname": "column_break_family",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grandfather_name",
+   "fieldtype": "Data",
+   "label": "Grandfather's Name"
+  },
+  {
+   "fieldname": "family_sequence",
+   "fieldtype": "Int",
+   "label": "Family Sequence",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "civil_section",
+   "fieldtype": "Section Break",
+   "label": "Civil Registry",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "label": "Place of Birth"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "column_break_civil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "civil_registry_office",
+   "fieldtype": "Data",
+   "label": "Civil Registry Office"
+  },
+  {
+   "fieldname": "place_of_registration",
+   "fieldtype": "Data",
+   "label": "Place of Registration"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "National ID"
+  },
+  {
+   "fieldname": "school_tab",
+   "fieldtype": "Tab Break",
+   "label": "School"
+  },
+  {
+   "fieldname": "school_section_break",
+   "fieldtype": "Section Break",
+   "label": "School"
+  },
+  {
+   "fieldname": "school_section",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Section"
+  },
+  {
+   "description": "On submit, a Sales Invoice is created from the submitted Fee Master for this grade.",
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Grade",
+   "options": "Grade"
+  },
+  {
+   "fieldname": "class_division",
+   "fieldtype": "Data",
+   "label": "Division"
+  },
+  {
+   "fieldname": "column_break_school",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "education_ministry_id",
+   "fieldtype": "Data",
+   "label": "Education Ministry ID"
+  },
+  {
+   "fieldname": "general_register_no",
+   "fieldtype": "Data",
+   "label": "General Register No"
+  },
+  {
+   "fieldname": "previous_school",
+   "fieldtype": "Data",
+   "label": "Previous School"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Data",
+   "label": "Governorate"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "subdistrict",
+   "fieldtype": "Data",
+   "label": "Subdistrict"
+  },
+  {
+   "fieldname": "column_break_address",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "father_phone",
+   "fieldtype": "Data",
+   "label": "Father's Phone"
+  },
+  {
+   "fieldname": "column_break_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mother_phone",
+   "fieldtype": "Data",
+   "label": "Mother's Phone"
+  },
+  {
+   "fieldname": "enrollment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Enrollment"
+  },
+  {
+   "fieldname": "enrollment_section",
+   "fieldtype": "Section Break",
+   "label": "Enrollment"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "no_copy": 1,
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "no_copy": 1,
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "withdrawal_date",
+   "fieldtype": "Date",
+   "label": "Withdrawal Date"
+  },
+  {
+   "fieldname": "column_break_enrollment",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "siblings_in_school",
+   "fieldtype": "Int",
+   "label": "Siblings in School",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "withdrawal_reason",
+   "fieldtype": "Small Text",
+   "label": "Withdrawal Reason"
+  },
+  {
+   "fieldname": "services_section",
+   "fieldtype": "Section Break",
+   "label": "Services",
+   "collapsible": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "needs_transport",
+   "fieldtype": "Check",
+   "label": "Needs Transport"
+  },
+  {
+   "default": "0",
+   "fieldname": "needs_meal",
+   "fieldtype": "Check",
+   "label": "Needs Meal"
+  },
+  {
+   "fieldname": "column_break_services",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transport_line",
+   "fieldtype": "Link",
+   "label": "Transport Line No",
+   "options": "Transport Line"
+  },
+  {
+   "fieldname": "records_section",
+   "fieldtype": "Section Break",
+   "label": "Records",
+   "collapsible": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_dossier",
+   "fieldtype": "Check",
+   "label": "Dossier on File"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_documents",
+   "fieldtype": "Check",
+   "label": "Supporting Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_ninth_certificate",
+   "fieldtype": "Check",
+   "label": "Ninth Grade Certificate"
+  },
+  {
+   "fieldname": "column_break_records",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_orphan",
+   "fieldtype": "Check",
+   "label": "Orphan"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_martyrs_child",
+   "fieldtype": "Check",
+   "label": "Martyr's Child"
+  },
+  {
+   "default": "0",
+   "fieldname": "fees_paid",
+   "fieldtype": "Check",
+   "label": "Fees Paid"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "General Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Billing",
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "student"
+  }
+ ],
+ "modified": "2026-10-28 13:00:00",
+ "modified_by": "Administrator",
+ "module": "Edu",
+ "name": "Student",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "student_name, last_name, national_id",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "student_name",
+ "track_changes": 1
+}
