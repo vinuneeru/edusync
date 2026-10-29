@@ -4,7 +4,7 @@ authors = [
     { name = "Vinayak", email = "88484705+vinuneeru@users.noreply.github.com"}
 ]
 description = "Custom education app. Upcoming school changes go here."
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
