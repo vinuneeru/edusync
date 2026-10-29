@@ -21,6 +21,12 @@ fixtures = [
 	{"dt": "Custom Field", "filters": [["module", "=", "Edu"]]},
 ]
 
+after_migrate = ["edu.edu.install.after_migrate"]
+
+app_include_js = "/assets/edu/js/edu_update.js"
+
+doctype_js = {"System Settings": "public/js/system_settings.js"}
+
 # The dock, the rail down the left of the desk, is a document rather than a hook. Author it in
 # Manage Dock on a developer-mode site and press Export to App, and it is written to
 # `edu/dock/edu/edu.json` for git to carry. An app that ships none has no

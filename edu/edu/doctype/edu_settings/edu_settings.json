@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "creation": "2026-10-28 22:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "help"
+ ],
+ "fields": [
+  {
+   "fieldname": "help",
+   "fieldtype": "HTML",
+   "label": "Help"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-28 22:30:00",
+ "modified_by": "Administrator",
+ "module": "Edu",
+ "name": "Edu Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

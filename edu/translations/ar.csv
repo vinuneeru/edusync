@@ -157,3 +157,14 @@ Attaching,جار الإرفاق
 Attaches when you save,يُرفق عند الحفظ
 Remove,إزالة
 Could not attach the file,تعذر إرفاق الملف
+Update Edu,تحديث إديو
+Pull latest update,سحب آخر تحديث
+Edu Settings,إعدادات إديو
+An update is already running.,هناك تحديث قيد التشغيل.
+Update finished.,اكتمل التحديث.
+Update failed.,فشل التحديث.
+Starting the update,جار بدء التحديث
+The bench command was not found.,أمر bench غير موجود.
+The bench Python was not found.,بايثون الخاص بالبنش غير موجود.
+The desk stopped answering. Reload this page in a moment.,توقف المكتب عن الاستجابة. أعد تحميل الصفحة بعد لحظات.
+"This pulls the latest edu app, then runs bench clear-cache, bench clear-website-cache, bench setup requirements, bench build, bench migrate and bench restart. The desk goes offline while the bench restarts.","يسحب آخر تحديث لتطبيق إديو ثم يمسح الذاكرة المؤقتة وذاكرة الموقع ويثبت المتطلبات ويبني الملفات ويرحّل ويعيد تشغيل البنش. يتوقف المكتب أثناء إعادة التشغيل."
